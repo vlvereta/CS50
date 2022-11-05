@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!--
+    Write a webpage that lets users answer trivia questions.
+    Problem homepage: https://cs50.harvard.edu/x/2022/labs/8/
+ -->
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>How many dogs in Spain in 2021 year counted in 1000s? According to the Statista portal (statista.com):</h3>
+                <p id="status_1" style="display:none"></p>
+                <button class="answer" value="0">0</button>
+                <button class="answer" value="6733">6733</button>
+                <button class="answer" value="9319">9319</button>
+                <button class="answer" value="1045">1045</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Why do you love CS50? 2 * 2?</h3>
+                <p id="status_2" style="display:none"></p>
+                <input type="text">
+                <button id="submit">Confirm</button>
+            </div>
+        </div>
+        <script>
+            // Part 1
+            const CORRECT_VALUE_1 = "9319";
+
+            const buttons = document.querySelectorAll(".answer");
+            const statusBlock1 = document.querySelector("#status_1");
+
+            buttons.forEach(b => b.addEventListener('click', () => {
+                if (b.value === CORRECT_VALUE_1) {
+                    b.style.backgroundColor = 'green';
+                    statusBlock1.innerHTML = "Correct";
+                    statusBlock1.style.display = 'block';
+                } else {
+                    b.style.backgroundColor = 'red';
+                    statusBlock1.innerHTML = "Incorrect";
+                    statusBlock1.style.display = 'block';
+                }
+            }));
+
+            // Part 2
+            const CORRECT_VALUE_2 = "4";
+
+            const statusBlock2 = document.querySelector("#status_2");
+            const input = document.querySelector("input");
+            const button = document.querySelector("#submit");
+
+            button.addEventListener('click', () => {
+                if (input.value === CORRECT_VALUE_2) {
+                    input.style.backgroundColor = "green";
+                    statusBlock2.innerHTML = "Correct";
+                    statusBlock2.style.display = 'block';
+                } else {
+                    input.style.backgroundColor = "red";
+                    statusBlock2.innerHTML = "Incorrect";
+                    statusBlock2.style.display = 'block';
+                }
+            });
+        </script>
+    </body>
+</html>

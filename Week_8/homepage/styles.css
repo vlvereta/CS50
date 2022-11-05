@@ -1,0 +1,45 @@
+header {
+    padding: 1rem;
+}
+
+header.row > .col {
+    border: 1px solid lightgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+header.row > .col:hover {
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+
+main {
+    padding: 0 1rem;
+    min-height: calc(100vh - 133.5px);
+}
+
+h3 {
+    margin: 2rem 0 1rem 0;
+}
+
+.underlined {
+    text-decoration: underline !important;
+}
+
+.blink {
+    display: none;
+}
+
+footer {
+    padding: .5rem 0;
+    border-top: 1px solid lightgray;
+}
+
+footer > p {
+    margin: 0;
+    color: gray;
+    font-size: small;
+}
