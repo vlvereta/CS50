@@ -1,6 +1,9 @@
 import re
 from cs50 import get_string
 
+# Implement a program that determines whether a provided credit card number is valid according to Luhn’s algorithm.
+# Problem homepage: https://cs50.harvard.edu/x/2022/psets/6/credit/
+
 
 def main():
     card_number = get_card_number()
