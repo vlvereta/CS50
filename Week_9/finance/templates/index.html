@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+  <h2>Hey, {{ username }}</h2>
+  <h2>Your CASH / GRAND TOTAL: {{ cash | usd }} / {{ total | usd }}</h2>
+  <h2>Stocks</h2>
+  <table>
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Amount</th>
+              <th>Total</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for share in shares %}
+              <tr>
+                  <td>{{ share.name }}</td>
+                  <td>{{ share.price | usd }}</td>
+                  <td>{{ share.amount }}</td>
+                  <td>{{ share.total | usd }}</td>
+              </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+  {{ result.name }}
+  -
+  {{ result.price | usd }}
+{% endblock %}

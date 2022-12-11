@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+  <h2>Your operations</h2>
+  <table>
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Symbol</th>
+              <th>Operations</th>
+              <th>Price</th>
+              <th>Amount</th>
+              <th>Datetime</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for share in shares %}
+              <tr>
+                  <td>{{ share.name }}</td>
+                  <td>{{ share.symbol }}</td>
+                  <td>{{ share.type }}</td>
+                  <td>{{ share.price | usd }}</td>
+                  <td>{{ share.amount }}</td>
+                  <td>{{ share.timestamp }}</td>
+              </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+{% endblock %}
