@@ -1,9 +1,6 @@
 import csv
 import sys
 
-# Implement a program that identifies a person based on their DNA.
-# Problem homepage: https://cs50.harvard.edu/x/2022/psets/6/dna/
-
 def main():
 
     # Check for command-line usage

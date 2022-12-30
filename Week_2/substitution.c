@@ -3,13 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 
-/**
- * Write a program called substitution that enables you to encrypt messages using a substitution cipher.
- * At the time the user executes the program, they should decide, by providing a command-line argument,
- * on what the key should be in the secret message they’ll provide at runtime.
- * Problem homepage: https://cs50.harvard.edu/x/2022/psets/2/substitution/
-*/
-
 // Length of the provided key
 const int KEY_LENGTH = 26;
 

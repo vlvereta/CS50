@@ -1,8 +1,5 @@
 from cs50 import get_int
 
-# Implement a program that prints out a double half-pyramid of a specified height.
-# Problem homepage: https://cs50.harvard.edu/x/2022/psets/6/mario/more/
-
 
 def main():
     height = get_height()

@@ -1,11 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
 
-/**
- * Mario's pyramids using hashes `#`.
- * Problem homepage: https://cs50.harvard.edu/x/2022/psets/1/mario/more/
-*/
-
 void print_char(int num, char c);
 
 int main(void)

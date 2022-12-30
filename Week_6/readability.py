@@ -1,9 +1,5 @@
 from cs50 import get_string
 
-# Write a program called readability that takes a text and determines its reading level.
-# First version of the program was written on C and can be found here in the Week 2.
-# Problem homepage: https://cs50.harvard.edu/x/2022/psets/6/readability/
-
 
 def main():
     # Getting the text to analyzing

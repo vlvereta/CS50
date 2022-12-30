@@ -2,9 +2,6 @@ import csv
 import sys
 import random
 
-# Simulate a sports tournament
-# Problem homepage: https://cs50.harvard.edu/x/2022/labs/6/
-
 # Number of simluations to run
 N = 1000
 

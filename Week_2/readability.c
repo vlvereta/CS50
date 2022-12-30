@@ -4,11 +4,6 @@
 #include <math.h>
 #include <ctype.h>
 
-/**
- * Write a program called readability that takes a text and determines its reading level.
- * Problem homepage: https://cs50.harvard.edu/x/2022/psets/2/readability/
-*/
-
 int count_letters(string text, int text_length);
 int count_words(string text, int text_length);
 int count_sentences(string text, int text_length);

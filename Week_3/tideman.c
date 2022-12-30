@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 
-/**
- * For this program, you’ll implement a program that runs a Tideman election.
- * Problem homepage: https://cs50.harvard.edu/x/2022/psets/3/tideman/
- */
-
 // Max number of candidates
 #define MAX 9
 

@@ -1,4 +1,5 @@
-# SQL exercises
+# Week 7: SQL
+
 ## Lab 7
 - Songs<br>
 Write SQL queries to answer questions about a database of songs.<br>

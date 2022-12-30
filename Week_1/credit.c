@@ -2,13 +2,6 @@
 #include <stdio.h>
 #include <math.h>
 
-/**
- * Write a program that prompts the user for a credit card number and
- * then reports whether it is a valid American Express, MasterCard, or Visa card number,
- * per the definitions of each’s format herein.
- * Problem homepage: https://cs50.harvard.edu/x/2022/psets/1/credit/
-*/
-
 char *get_card_provider_by_number(long card_number);
 int get_digits_amount(long card_number);
 bool is_card_number_valid(long card_number);

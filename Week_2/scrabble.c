@@ -3,13 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-/**
- * Complete the implementation of scrabble.c,
- * such that it determines the winner of a short scrabble-like game,
- * where two players each enter their word, and the higher scoring player wins.
- * Problem homepage: https://cs50.harvard.edu/x/2022/labs/2/
-*/
-
 // Points assigned to each letter of the alphabet
 int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 
